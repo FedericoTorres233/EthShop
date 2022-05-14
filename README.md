@@ -8,8 +8,8 @@
 
 ## Integrantes
 
-* **Torres Federico** 7mo 2da Aviónica Comisión B
-* **Ramiro Mariani** 7mo 2da Aviónica Comisión B
+- [**Torres Federico**](https://github.com/FedericoTorres233) 7mo 2da Aviónica Comisión B
+- [**Ramiro Mariani**](https://github.com/RamiroMariani) 7mo 2da Aviónica Comisión B
 
 ## Objetivo
 
@@ -31,7 +31,6 @@ Idem.
 
 Idem.
 
-
 ### Requisitos
 
 El proyecto final consiste en hacer una pagina web con `HTML`, `CSS`, `JavaScript` y `Python`. El contenido y tipo de pagina puede ser a gusto, pero debe cumplir con los siguientes requisitos:
@@ -41,4 +40,3 @@ El proyecto final consiste en hacer una pagina web con `HTML`, `CSS`, `JavaScrip
 - Todas las paginas deben incluir una barra de navegacion y un footer o pie de pagina.
 - Tener al menos un objeto en `models.py` dentro de la base de datos (excluyendo el de Users).
 - Tener al menos un script de JavaScript (`index.js`).
-
