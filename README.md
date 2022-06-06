@@ -2,6 +2,8 @@
 
 ### Proyecto final
 
+<img src="./shop/static/favicon.svg" height="100" width="100" />
+
 # EthShop
 
 </div>
