@@ -2,4 +2,10 @@
 
 pragma solidity >=0.6.0;
 
-contract EthShop {}
+contract Ethshop{
+    address payable public Owner;
+
+    constructor(){
+        Owner = payable(msg.sender);
+    }
+}
