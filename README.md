@@ -2,7 +2,7 @@
 
 ### Proyecto final
 
-<img src="./shop/static/favicon.svg" height="100" width="100" />
+<img src="./public/favicon.svg" height="100" width="100" />
 
 # EthShop
 
