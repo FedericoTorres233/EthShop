@@ -14,6 +14,7 @@ contract Ethshop {
         _;
     }
 
+    fallback() external payable {}
 
     function withdrawFunds(uint256 _amount) public payable onlyOwner {
         Owner.transfer(_amount);
