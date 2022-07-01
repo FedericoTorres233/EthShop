@@ -8,4 +8,14 @@ contract Ethshop{
     constructor(){
         Owner = payable(msg.sender);
     }
+
+    modifier onlyOwner() {
+        require(msg.sender == Owner, 'Not owner'); 
+        _;
+    }
+
+
+    function withdrawFunds(uint256 _amount) payable public onlyOwner {
+        Owner.transfer(_amount);
+    }
 }
