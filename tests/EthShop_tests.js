@@ -20,11 +20,11 @@ contract("Ethshop", (account) => {
 
   // This code executes after the contract is created
   context("Execution", async () => {
-    it("Should deposits to contract", async () => {
-      await instance.send(web3.toWei(10, "ether"));
-      balance = await EthshopInstance.balance;
-      console.log(balance);
-      //expect(balance).to.equal(10);
+    it("Should deposit to contract", async () => {
+      const balance_sent = Math.trunc(Math.random() * 1000000000).toString();
+      await EthshopInstance.send(balance_sent);
+      const balance = await web3.eth.getBalance(EthshopInstance.address);
+      expect(balance).to.equal(balance_sent);
     });
   });
 });
