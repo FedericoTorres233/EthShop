@@ -16,7 +16,11 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@truffle/hdwallet-provider": "^2.0.10",
+    "chai": "^4.3.6",
+    "dotenv": "^16.0.1",
     "eslint": "8.18.0",
-    "eslint-config-next": "12.2.0"
+    "eslint-config-next": "12.2.0",
+    "web3": "^1.7.4"
   }
 }
