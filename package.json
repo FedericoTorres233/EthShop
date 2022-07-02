@@ -2,12 +2,17 @@
   "name": "ethshop",
   "version": "0.1.0",
   "private": true,
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
+  "keywords": [],
   "dependencies": {
     "bootstrap": "^5.1.3",
     "next": "12.2.0",
