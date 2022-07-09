@@ -1,6 +1,7 @@
 .card {
   width: 20rem;
   background-color: #3e454d98;
+  cursor: pointer;
 }
 
 .column {
