@@ -10,8 +10,15 @@ function MyCarousel() {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>La moneda del futuro</h3>
-          <p>Utiliza las mas avanzadas tecnologias para obtener los beneficios de las crypto</p>
+          <h1>
+            <strong>La moneda del futuro</strong>
+          </h1>
+          <h4>
+            <strong>
+              Utiliza las mas avanzadas tecnologias para obtener los beneficios
+              de las crypto
+            </strong>
+          </h4>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={1000}>
@@ -21,8 +28,12 @@ function MyCarousel() {
           alt="Second slide"
         />
         <Carousel.Caption>
-          <h3>Sé independiente</h3>
-          <p>Invierte el 100% de tu dinero en el producto</p>
+          <h1>
+            <strong>Sé independiente</strong>
+          </h1>
+          <h4>
+            <strong>Invierte el 100% de tu dinero en el producto</strong>
+          </h4>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={1000}>
@@ -32,10 +43,15 @@ function MyCarousel() {
           alt="Third slide"
         />
         <Carousel.Caption>
-          <h3>Descubre los beneficios a largo y corto plazo</h3>
-          <p>
-            Experimente los beneficios de las cryptomonedas sin riesgo alguno, gracias a nuestro sistema anti-pérdidas
-          </p>
+          <h1>
+            <strong>Descubre los beneficios a largo y corto plazo</strong>
+          </h1>
+          <h4>
+            <strong>
+              Experimente los beneficios de las cryptomonedas sin riesgo alguno,
+              gracias a nuestro sistema anti-pérdidas
+            </strong>
+          </h4>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
