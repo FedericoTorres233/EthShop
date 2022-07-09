@@ -7,3 +7,14 @@
   display: grid;
   place-items: center;
 }
+
+.cardImg:hover {
+  transition: 0.3s 0s;
+  box-shadow: 3px 3px 1px black;
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+  -webkit-transition: 0.3s 0s;
+  -moz-transition: 0.3s 0s;
+  -ms-transition: 0.3s 0s;
+  -o-transition: 0.3s 0s;
+}
