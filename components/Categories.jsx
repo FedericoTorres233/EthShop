@@ -5,6 +5,9 @@ export default function Categories() {
   const category_list = ["Comida", "Electronica", "Videojuegos", "Libros"];
   return (
     <>
+      <h1 className="display-1 text-white text-center my-5">
+        <strong>Categorías</strong>
+      </h1>
       <Row xs={1} md={2} className="mt-4 mb-5 g-5">
         {category_list.map((category, idx) => (
           <Col key={idx} className={classes.column}>
