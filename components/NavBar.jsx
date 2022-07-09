@@ -1,22 +1,27 @@
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Navbar from "react-bootstrap/Navbar";
+import Link from "next/link";
 
 function NavBar() {
   return (
     <>
       <Navbar bg="dark" expand="lg" variant="dark">
         <Container fluid>
-          <Navbar.Brand href="#home">
-            <img
-              alt=""
-              src="/favicon.svg"
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-            />{" "}
-            EthShop
-          </Navbar.Brand>
+          <Link href="/">
+            <a>
+              <Navbar.Brand>
+                <img
+                  alt=""
+                  src="/favicon.svg"
+                  width="30"
+                  height="30"
+                  className="d-inline-block align-top"
+                />{" "}
+                EthShop
+              </Navbar.Brand>
+            </a>
+          </Link>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse
             id="navbarScroll"
