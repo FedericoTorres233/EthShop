@@ -1,0 +1,9 @@
+.card {
+  width: 20rem;
+  background-color: #3e454d98;
+}
+
+.column {
+  display: grid;
+  place-items: center;
+}
