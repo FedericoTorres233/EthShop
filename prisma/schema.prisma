@@ -19,4 +19,16 @@ model Usuario {
 model Categoria {
   id        Int        @id @default(autoincrement())
   nombre    String
+  productos Producto[]
 }
+
+model Producto {
+  id          Int       @id @default(autoincrement())
+  nombre      String
+  precio      Int
+  stock       Boolean   @default(true)
+  categoria   Categoria @relation(fields: [categoriaId], references: [id])
+  categoriaId Int
+  pedidoId    Int       @unique
+}
+
