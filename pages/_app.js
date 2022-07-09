@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import Head from "next/head";
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import NavBar from "../components/NavBar";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -12,6 +13,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="shortcut icon" href="/favicon.svg" />
       </Head>
       <main>
+        <NavBar />
         <Component {...pageProps} />
       </main>
     </>
