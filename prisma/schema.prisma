@@ -15,6 +15,7 @@ model Usuario {
   email      String @unique
   avatar_url String
   items      Item[]
+  contrasena String
 }
 
 model Categoria {
