@@ -8,35 +8,36 @@ datasource db {
 }
 
 model Usuario {
-  id         Int     @id @default(autoincrement())
+  id         String @id @default(uuid())
   nombre     String
   apellido   String
   direccion  String
-  email      String  @unique
+  email      String @unique
   avatar_url String
-  pedidos    Pedido?
+  items      Item[]
 }
 
 model Categoria {
-  id        Int        @id @default(autoincrement())
+  id        String     @id @default(uuid())
   nombre    String
   productos Producto[]
 }
 
 model Producto {
-  id          Int       @id @default(autoincrement())
+  id          String    @id @default(uuid())
   nombre      String
   precio      Int
   stock       Boolean   @default(true)
   categoria   Categoria @relation(fields: [categoriaId], references: [id])
-  categoriaId Int
-  pedido      Pedido    @relation(fields: [pedidoId], references: [id])
-  pedidoId    Int       @unique
+  categoriaId String
+  item        Item?     @relation(fields: [itemId], references: [id])
+  itemId      String?   @unique
 }
 
-model Pedido {
-  id        Int       @id @default(autoincrement())
+model Item {
   usuario   Usuario   @relation(fields: [usuarioId], references: [id])
-  usuarioId Int       @unique
+  usuarioId String
+  id        String    @id @default(uuid())
+  cantidad  String
   producto  Producto?
 }
