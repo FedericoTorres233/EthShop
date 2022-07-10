@@ -35,9 +35,9 @@ model Producto {
 }
 
 model Item {
-  usuario   Usuario   @relation(fields: [usuarioId], references: [id])
-  usuarioId String
   id        String    @id @default(uuid())
   cantidad  String
   producto  Producto?
+  usuario   Usuario   @relation(fields: [usuarioId], references: [id])
+  usuarioId String
 }
